@@ -4,11 +4,55 @@
 		<title>x-54.com</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="x-54 used to be a web development business." />
-		<style></style>
+		<style>
+			body {
+				background: url('bg.gif');
+				font-family: sans-serif;
+				font-size: 12px;
+			}
+			a {
+				font-size: 10px;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			div {
+				display: block;
+				width: 300px;
+				background-color: #fff;
+				text-align: center;
+				padding: 12px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.3);
+				border-radius: 3px;
+			}
+			div > * {
+				margin-bottom: 12px;
+			}
+			div > *:last-child {
+				margin-bottom: 0;
+			}
+			h1 {
+				display: block;
+				height: 100px;
+				color: transparent;
+				font-size: 0;
+				background: url('logo.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>x-54.com</h1>
-		<p>This used to be a web development business.</p>
-		<p><a href="https://github.com/wvbe">Go to my GitHub profile instead</a>.</p>
+		<div>
+			<h1>x-54.com</h1>
+			<p>This used to be a web development business.</p>
+			<p><a href="https://github.com/wvbe">Go to my GitHub profile instead</a>.</p>
+		</div>
 	</body>
 </html>
